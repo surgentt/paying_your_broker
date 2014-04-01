@@ -6,6 +6,14 @@
 
 //http://stackoverflow.com/questions/16739908/make-image-fill-div-completely-without-stretching
 
+  .monopoly_man{
+    background-image: url('monopoly-man.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 278px;
+    height: 360px;
+  }
+
   .toliet_paper{
     background-image: url('http://i.imgur.com/ylM09jb.jpg?1');
     background-repeat: no-repeat;

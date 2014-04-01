@@ -31,7 +31,7 @@ $(document).ready(function(){
 
     $(".ripoff").empty();
     $(".ripoff").append('<h3>You paid your broker '+ ripoff +'</h3>');
-    $(".ripoff").append('<h4>Now he can now buy:</h4>');
+    $(".ripoff").append('<h4>They can now buy:</h4>');
 
     if (20 <= gift && gift < 1650){
       $(".ripoff").append('<div>$20 Renova Colored Toliet Paper</div>');
