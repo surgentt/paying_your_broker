@@ -18,6 +18,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'spring', git: "git@github.com:rails/spring.git", group: :development
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 
@@ -45,7 +46,8 @@ group :test, :development do
   gem "database_cleaner"
   gem "sqlite3"
   gem "pry"
-  gem "jasmine", git: "git@github.com:pivotal/jasmine-gem.git"
+  # gem "jasmine", git: "git@github.com:pivotal/jasmine-gem.git"
+  gem 'jasmine-rails'
 end
 
 group :production do

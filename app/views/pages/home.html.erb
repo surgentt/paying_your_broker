@@ -1,0 +1,27 @@
+<h1>Screw Your Banker</h1>
+
+<div>
+  <%= form_tag("/pages", method: "get", role: "form") do %>
+    <div class="form-group">
+      <%= label_tag "Current Investment Value" %>
+      <%= number_field_tag "Current Investment Value", "", class: "form-control", id: "present-value" %><br>
+    </div>
+
+    <div class="form-group">
+      <%= label_tag "How Much Do You Contribute Every Year?" %>
+      <%= number_field_tag "How Much Do You Contribute Every Year?", "", class: "form-control", id: "contributions" %><br>
+    </div>
+
+    <div class="form-group">
+      <%= label_tag "How Old Are You?" %>
+      <%= number_field_tag "How Old Are You?", "", class: "form-control", id: "age"  %><br>
+    </div>
+
+    <div class="form-group">
+      <%= label_tag "What is the expense ratio for your portfolio?" %>
+      <%= text_field_tag "What is the expense ratio for your portfolio?", "", class: "form-control", id: "expense-ratio"  %><br>
+    </div>
+
+    <%= submit_tag "Are you getting ripped off?", class: "btn btn-primary btn-lg btn-block" %>
+  <% end %>
+</div>
