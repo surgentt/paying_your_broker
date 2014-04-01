@@ -1,15 +1,10 @@
 $(document).ready(function(){
 
-  var pv = $("#present_value").val();
-  var pmt = $("#pmt").val();
-  var age = $("#age").val();
-  var expenseRatio = $("#expense_ratio").val();
-  
   function PortfolioValue (PV, pmt, age, ER) {
-    this.pv = (PV);
-    this.pmt = (pmt);
-    this.age = (age);
-    this.ER = (ER);
+    this.pv = PV;
+    this.pmt = pmt;
+    this.age = age;
+    this.ER = ER;
 
     this.numberOfPeriods = monthsUntilRetirement(this.age);
     this.interestRate = monthlyAdjustInterestRate(8 - this.ER)/100;
@@ -19,9 +14,17 @@ $(document).ready(function(){
   }
 
   $(".user_input").on("submit", function(e){
-    e.preventDefault;
+    e.preventDefault();
+
+    var pv = $("#present_value").val();
+    var pmt = $("#pmt").val();
+    var age = $("#age").val();
+    var expenseRatio = $("#expense_ratio").val();
+    var vanguard_ratio = 0.17
+
     var port1 = new PortfolioValue(pv, pmt, age, expenseRatio)
-    console.log(port1.fv);
+    var port2 = new PortfolioValue(pv, pmt, age, vanguard_ratio)
+    console.log("Fucking Bankers: " + (port2.fv - port1.fv));
   });
 
 });
