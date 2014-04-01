@@ -14,4 +14,20 @@ describe "getting a amount fucked by Banker", :js => true do
     expect(page).to have_content("$260,568")
   end
 
+  it "should show picutres" do
+
+    # if payment < 5000
+    #   "should include this."
+    # elsif payment < 15,000 
+    #   "A vegas Trip"
+    # elsif payment < 50,000
+    #   "A mercedes Benz"
+    # elsif payment < 250,000
+    #   "A yatch"
+    # elsif payment < 500,000
+    #   "A mansion"
+    # else
+  end
+
 end
+

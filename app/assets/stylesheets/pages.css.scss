@@ -1,3 +1,63 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Use sass. Always want to photos to be the heights.
+
+//http://stackoverflow.com/questions/16739908/make-image-fill-div-completely-without-stretching
+
+  .toliet_paper{
+    background-image: url('http://i.imgur.com/ylM09jb.jpg?1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+  }
+
+  .gold_backpack {
+    background-image: url('http://i.imgur.com/ZCv5Yjk.jpg?2');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+  }
+
+  .toliet {
+    background-image: url('http://i.imgur.com/h4dtmMl.jpg?1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+  }
+
+  .vacuum {
+    background-image: url('http://i.imgur.com/r03Js3w.jpg?1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+  }
+
+  .whac_a_mole {
+    background-image: url('http://i.imgur.com/We9wRd8.jpg?1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+  }
+
+  .headset {
+    background-image: url('http://i.imgur.com/x6BebRU.jpg?1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+  }
+
+  .hovercraft {
+    background-image: url('http://i.imgur.com/KV4qnTn.jpg?1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+  }
