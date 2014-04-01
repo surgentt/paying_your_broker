@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "getting a amount fucked by Banker" do 
+describe "getting a amount fucked by Banker", :js => true do 
 
   it "should output how badly you got fucked by your broker" do 
     visit root_path

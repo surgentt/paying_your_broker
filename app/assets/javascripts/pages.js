@@ -28,7 +28,8 @@ $(document).ready(function(){
 
     var port1 = new PortfolioValue(pv, pmt, age, expenseRatio)
     var port2 = new PortfolioValue(pv, pmt, age, vanguard_ratio)
-    console.log("Fucking Bankers: " + (port2.fv - port1.fv));
+    var ripoff = "$" + (port2.fv - port1.fv).formatMoney(0)
+    $(".ripoff").append(ripoff)
   });
 
 });

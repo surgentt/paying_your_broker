@@ -1,13 +1,13 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/thomassurgent/Desktop/flatiron/Project_Mode/screw_your_banker/app/controllers/pages_controller.rb": [
+      "/Users/danielspector/projects/flatiron_school/flatiron_projects/screw_your_banker/app/controllers/pages_controller.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/thomassurgent/Desktop/flatiron/Project_Mode/screw_your_banker/app/controllers/application_controller.rb": [
+      "/Users/danielspector/projects/flatiron_school/flatiron_projects/screw_your_banker/app/controllers/application_controller.rb": [
         1,
         null,
         null,
@@ -15,6 +15,6 @@
         null
       ]
     },
-    "timestamp": 1396359216
+    "timestamp": 1396365389
   }
 }
