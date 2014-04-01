@@ -1,25 +1,25 @@
 <h1>Screw Your Banker</h1>
 
 <div>
-  <%= form_tag("/pages", method: "get", role: "form", class: "user_input") do %>
+  <%= form_tag("/", method: "get", role: "form", class: "user_input") do %>
     <div class="form-group">
-      <%= label_tag "Current Investment Value" %>
-      <%= number_field_tag "Current Investment Value", "", class: "form-control", id: "present-value" %><br>
+      <%= label_tag :present_value, "Current Investment Value" %>
+      <%= number_field_tag :present_value, nil, class: "form-control", required: true %><br>
     </div>
 
     <div class="form-group">
-      <%= label_tag "How Much Do You Contribute Every Month?" %>
-      <%= number_field_tag "How Much Do You Contribute Every Month?", "", class: "form-control", id: "contributions" %><br>
+      <%= label_tag :pmt, "How much do you contribute each month?" %>
+      <%= number_field_tag  :pmt, nil, class: "form-control", id: "contributions", required: true %><br>
     </div>
 
     <div class="form-group">
-      <%= label_tag "How Old Are You?" %>
-      <%= number_field_tag "How Old Are You?", "", class: "form-control", id: "age"  %><br>
+      <%= label_tag :age, "How Old Are You?" %>
+      <%= number_field_tag :age, nil, class: "form-control", id: "age", required: true %><br>
     </div>
 
     <div class="form-group">
-      <%= label_tag "What is the expense ratio for your portfolio?" %>
-      <%= text_field_tag "What is the expense ratio for your portfolio?", "", class: "form-control", id: "expense-ratio"  %><br>
+      <%= label_tag :expense_ratio, "What is the expense ratio for your portfolio?" %>
+      <%= text_field_tag :expense_ratio, nil, class: "form-control"  %><br>
     </div>
 
     <%= submit_tag "What are you buying your broker?", id: "submit", class: "btn btn-primary btn-lg btn-block" %>

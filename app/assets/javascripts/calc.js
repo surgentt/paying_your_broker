@@ -18,6 +18,6 @@ function monthlyAdjustInterestRate(interestRate) {
   return interestRate / 12
 }
 
-function yearUntilRetirement(age){
+function monthsUntilRetirement(age){
   return (65 - age) * 12 
 }

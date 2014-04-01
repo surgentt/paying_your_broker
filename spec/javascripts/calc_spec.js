@@ -35,6 +35,6 @@ describe ("adjustments from form", function(){
 
   it ("should return number of periods until retirement", function(){
     var age = 23
-    expect(yearUntilRetirement(age)).toEqual(504)
+    expect(monthsUntilRetirement(age)).toEqual(504)
   });
 });
