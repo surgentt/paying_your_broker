@@ -1,3 +1,10 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+div#explain-footer {
+  padding-top: 20px;
+ p {
+    font-size: 0.8em;
+    color: rgb(127, 140, 141)
+  }
+}
