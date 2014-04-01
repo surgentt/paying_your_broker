@@ -22,3 +22,16 @@ function monthsUntilRetirement(age, retirementAge){
   var retirementAge = retirementAge || 65;
   return (retirementAge - age) * 12 
 }
+
+function PortfolioValue (PV, pmt, age, ER) {
+    this.pv = PV;
+    this.pmt = pmt;
+    this.age = age;
+    this.ER = ER;
+
+    this.numberOfPeriods = monthsUntilRetirement(this.age, retirementAge);
+    this.interestRate = monthlyAdjustInterestRate(growth_rate - this.ER)/100;
+    this.FVofPV = calcFVofPV(this.pv, this.numberOfPeriods, this.interestRate);
+    this.FVofOrdinaryAnnuity = calcFVofOrdinaryAnnuity(this.pmt, this.numberOfPeriods, this.interestRate)
+    this.fv = calcFVofOrdinaryAnnuityWithPV(this.FVofPV, this.FVofOrdinaryAnnuity);
+  }

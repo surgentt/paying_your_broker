@@ -33,4 +33,34 @@
   <p>This is where the picture goes</p>
 </div>
 
+<div class="col-md-9">
+  <%= form_tag(funds_path, method: "post", remote: true) do %>
+    <div class="form-group">
+      <%= label_tag :present_value, "Current Retirement Savings" %>
+      <%= number_field_tag :present_value, nil, class: "form-control", required: true %><br>
+    </div>
+
+    <div class="form-group">
+      <%= label_tag :fund_ticker, "Fund Ticker" %>
+      <%= text_field_tag :fund_ticker, nil, class: "form-control", required: true %><br>
+    </div>
+      
+    <div class="form-group">
+      <%= label_tag :pmt, "Monthly Contributions" %>
+      <%= number_field_tag  :pmt, nil, class: "form-control", required: true %><br>
+    </div>
+
+    <div class="form-group">
+      <%= label_tag :age, "How Old Are You?" %>
+      <%= number_field_tag :age, nil, class: "form-control", id: "age", required: true %><br>
+    </div>
+
+    <%= submit_tag "What are you buying your broker?", id: "submit", class: "btn btn-primary btn-lg btn-block" %>
+  <% end %>
+</div>
+
+<div id="from-controller">
+  <p>Test String</p>
+</div>
+
 
