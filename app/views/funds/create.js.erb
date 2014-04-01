@@ -10,5 +10,6 @@ var exp = <%= @exp_ratio.to_f %>
 
 var port1 = new PortfolioValue(pv, pmt, age, exp);
 var port2 = new PortfolioValue(pv, pmt, age, vanguard_ratio);
-var ripoff = "$" + (port2.fv - port1.fv).formatMoney(0);
+var gift = port2.fv - port1.fv
+var ripoff = "$" + (gift).formatMoney(0);
 $("#from-controller p").html(ripoff)

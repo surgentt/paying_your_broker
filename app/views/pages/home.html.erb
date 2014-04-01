@@ -22,6 +22,11 @@
       <%= text_field_tag :expense_ratio, nil, class: "form-control"  %><br>
     </div>
 
+    <div class="form-group">
+      <%= label_tag :fund_ticker, "Fund Ticker" %>
+      <%= text_field_tag :fund_ticker, nil, class: "form-control" %><br>
+    </div>
+
     <%= submit_tag "What are you buying your broker?", id: "submit", class: "btn btn-primary btn-lg btn-block" %>
   <% end %>
 

@@ -27,8 +27,11 @@ function PortfolioValue (PV, pmt, age, ER) {
     this.pv = PV;
     this.pmt = pmt;
     this.age = age;
-    this.ER = ER;
+    this.ER = ER; 
 
+    var retirementAge;
+    var growth_rate = 8
+    
     this.numberOfPeriods = monthsUntilRetirement(this.age, retirementAge);
     this.interestRate = monthlyAdjustInterestRate(growth_rate - this.ER)/100;
     this.FVofPV = calcFVofPV(this.pv, this.numberOfPeriods, this.interestRate);
