@@ -51,9 +51,12 @@ $(document).ready(function(){
     } else if (50000 <= gift && gift <= 190000) {
       $(".ripoff").append('<div>$50,000 Diamond Encrusted Bluetooth Headset</div>');
       $(".ripoff").append('<div class="headset"></div>');      
-    } else if (190000 <= gift) {
+    } else if (190000 <= gift && gift <= 1350000) {
       $(".ripoff").append('<div>$190,000 An Actual Hovercraft</div>');
       $(".ripoff").append('<div class="hovercraft"></div>');      
+    } else if (1350000 <= gift) {
+      $(".ripoff").append('<div>$1,350,000 Giant Robot Warrior</div>');
+      $(".ripoff").append('<div class="robot"></div>'); 
     }
   });
 
