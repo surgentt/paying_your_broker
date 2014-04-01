@@ -1,4 +1,8 @@
 $(document).ready(function(){
+  // Assumptuons
+  var growth_rate = 8;
+  var vanguard_ratio = 0.17;
+  // Retirement_age is 65;
 
   function PortfolioValue (PV, pmt, age, ER) {
     this.pv = PV;
@@ -6,8 +10,9 @@ $(document).ready(function(){
     this.age = age;
     this.ER = ER;
 
+    // This function could be refactored later to include retirement age as an argument
     this.numberOfPeriods = monthsUntilRetirement(this.age);
-    this.interestRate = monthlyAdjustInterestRate(8 - this.ER)/100;
+    this.interestRate = monthlyAdjustInterestRate(growth_rate - this.ER)/100;
     this.FVofPV = calcFVofPV(this.pv, this.numberOfPeriods, this.interestRate);
     this.FVofOrdinaryAnnuity = calcFVofOrdinaryAnnuity(this.pmt, this.numberOfPeriods, this.interestRate)
     this.fv = calcFVofOrdinaryAnnuityWithPV(this.FVofPV, this.FVofOrdinaryAnnuity);
@@ -20,7 +25,6 @@ $(document).ready(function(){
     var pmt = $("#pmt").val();
     var age = $("#age").val();
     var expenseRatio = $("#expense_ratio").val();
-    var vanguard_ratio = 0.17
 
     var port1 = new PortfolioValue(pv, pmt, age, expenseRatio)
     var port2 = new PortfolioValue(pv, pmt, age, vanguard_ratio)
