@@ -1,7 +1,7 @@
 <h1>Screw Your Banker</h1>
 
 <div>
-  <%= form_tag("/pages", method: "get", role: "form") do %>
+  <%= form_tag("/pages", method: "get", role: "form", class: "user_input") do %>
     <div class="form-group">
       <%= label_tag "Current Investment Value" %>
       <%= number_field_tag "Current Investment Value", "", class: "form-control", id: "present-value" %><br>
@@ -22,6 +22,6 @@
       <%= text_field_tag "What is the expense ratio for your portfolio?", "", class: "form-control", id: "expense-ratio"  %><br>
     </div>
 
-    <%= submit_tag "Are you getting ripped off?", class: "btn btn-primary btn-lg btn-block" %>
+    <%= submit_tag "What are you buying your broker?", id: "submit", class: "btn btn-primary btn-lg btn-block" %>
   <% end %>
 </div>
