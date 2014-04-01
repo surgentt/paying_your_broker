@@ -6,6 +6,14 @@
 
 //http://stackoverflow.com/questions/16739908/make-image-fill-div-completely-without-stretching
 
+  div#explain-footer {
+    padding-top: 20px;
+    p {
+      font-size: 0.8em;
+      color: rgb(127, 140, 141)
+    }
+  }
+
   .monopoly_man{
     background-image: url('monopoly-man.jpg');
     background-repeat: no-repeat;
@@ -77,3 +85,5 @@
     width: 500px;
     height: 300px;
   }
+
+
