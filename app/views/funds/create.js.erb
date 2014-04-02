@@ -1,12 +1,11 @@
-
 var retirementAge = 65;
 var growth_rate = 8;
 var vanguard_ratio = 0.17;
 
-var pv = <%= @present_value.to_i %>
-var pmt = <%= @pmt.to_i %>
-var age = <%= @age.to_i %>
-var exp = <%= @exp_ratio.to_f %>
+var pv = <%= @present_value %>
+var pmt = <%= @pmt %>
+var age = <%= @age %>
+var exp = <%= @exp_ratio %>
 
 var port1 = new PortfolioValue(pv, pmt, age, exp);
 var port2 = new PortfolioValue(pv, pmt, age, vanguard_ratio);

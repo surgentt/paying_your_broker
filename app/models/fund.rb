@@ -7,4 +7,8 @@ class Fund < ActiveRecord::Base
     exp_ratio = page.css("td span[@vkey = 'ExpenseRatio']").text.strip.chop
   end
 
+  def strip_commas
+    self.number = self.number.gsub(",", "")    
+  end
+
 end

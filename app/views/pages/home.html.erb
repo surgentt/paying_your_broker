@@ -4,12 +4,12 @@
   <%= form_tag(funds_path, method: "post", remote: true) do %>
     <div class="form-group">
       <%= label_tag :present_value, "Current Retirement Savings" %>
-      <%= number_field_tag :present_value, nil, class: "form-control" %><br>
+      <%= text_field_tag :present_value, nil, class: "form-control" %><br>
     </div>
 
     <div class="form-group">
       <%= label_tag :pmt, "Monthly Contributions" %>
-      <%= number_field_tag  :pmt, nil, class: "form-control" %><br>
+      <%= text_field_tag  :pmt, nil, class: "form-control" %><br>
     </div>
 
     <div class="form-group">
