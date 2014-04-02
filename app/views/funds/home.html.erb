@@ -1,7 +1,6 @@
-<div class="overlay overlay-content.open wrapper">
-
+<div class="wrapper">
   <div class="row">
-    <div class="col-lg-8 col-md-8 col-sm-8 col-centered">
+    <div class="col-lg-8 col-md-8 col-sm-8 col-centered user_input">
       <%= form_tag(funds_path, method: "post", remote: true, id: "nl-form", class: "nl-form clearfix") do %>
         I am currently <input type="text" value="" placeholder="35" name="age" id="age-input" />
         . I have $
@@ -10,16 +9,30 @@
           <input type="text" value="" placeholder="1,000" name="pmt" id="cont-input" />
         and my high-fee mutual fund's ticker symbol is 
           <input type="text" value="" placeholder="FFFFX" name="fund_ticker" />
-        .
-        <div class="text-align-center">
-          <button class="nl-submit" type="submit">My Broker can buy</button>
+          .
+        <div class="nl-submit-wrap col-md-8 col-md-offset-2 text-align-center">
+          <button class="nl-submit submit center" data-toggle="modal" data-target="#myModal" type="submit">My Broker can buy</button>
         </div>
       <% end %>
     </div>
   </div>
+</div>
 
-<!--   <div class="ripoff col-md-6">
-    <div class="monopoly_man"></div>
-  </div>  -->
-
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Here's what your broker can now buy...</h4>
+      </div>
+      <div class="modal-body">
+            <!-- <div class="monopoly_man"></div> -->
+      </div>
+        <!-- </div> -->
+<!--       <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
 </div>
