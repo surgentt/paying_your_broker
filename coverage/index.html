@@ -14,7 +14,7 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-04-01T16:23:12-04:00">2014-04-01T16:23:12-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2014-04-02T11:26:18-04:00">2014-04-02T11:26:18-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -31,9 +31,9 @@
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>2</b> files in total.
-    <b>4</b> relevant lines. 
-    <span class="green"><b>4</b> lines covered</span> and
+    <b>3</b> files in total.
+    <b>16</b> relevant lines. 
+    <span class="green"><b>16</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -61,11 +61,21 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#22f5e56b8faadfea00387eb7ccf49a36766eeb21" class="src_link" title="app/controllers/pages_controller.rb">app/controllers/pages_controller.rb</a></td>
+        <td class="strong"><a href="#cf2947946ef2192e3b9a78182cc1e17e8ccb45a7" class="src_link" title="app/controllers/funds_controller.rb">app/controllers/funds_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>4</td>
-        <td>2</td>
-        <td>2</td>
+        <td>18</td>
+        <td>9</td>
+        <td>9</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#afddb44e6376228191d5b321e1f9d6690c478d4c" class="src_link" title="app/models/fund.rb">app/models/fund.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>10</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -90,8 +100,8 @@
   <a name="Controllers"></a>
   <div>
     <b>2</b> files in total.
-    <b>4</b> relevant lines. 
-    <span class="green"><b>4</b> lines covered</span> and
+    <b>11</b> relevant lines. 
+    <span class="green"><b>11</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -119,11 +129,11 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#22f5e56b8faadfea00387eb7ccf49a36766eeb21" class="src_link" title="app/controllers/pages_controller.rb">app/controllers/pages_controller.rb</a></td>
+        <td class="strong"><a href="#cf2947946ef2192e3b9a78182cc1e17e8ccb45a7" class="src_link" title="app/controllers/funds_controller.rb">app/controllers/funds_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>4</td>
-        <td>2</td>
-        <td>2</td>
+        <td>18</td>
+        <td>9</td>
+        <td>9</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -139,17 +149,17 @@
     (<span class="covered_percent"><span class="green">100.0%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="red">
-         0.0
+       <span class="yellow">
+         1.0
        </span>
     </span> hits/line)
   </h2>
   <a name="Models"></a>
   <div>
-    <b>0</b> files in total.
-    <b>0.0</b> relevant lines. 
-    <span class="green"><b>0.0</b> lines covered</span> and
-    <span class="red"><b>0.0</b> lines missed </span>
+    <b>1</b> files in total.
+    <b>5</b> relevant lines. 
+    <span class="green"><b>5</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -164,6 +174,16 @@
       </tr>
     </thead>
     <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#afddb44e6376228191d5b321e1f9d6690c478d4c" class="src_link" title="app/models/fund.rb">app/models/fund.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>10</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
       
     </tbody>
   </table>
@@ -339,13 +359,13 @@
   </pre>
 </div>
       
-        <div class="source_table" id="22f5e56b8faadfea00387eb7ccf49a36766eeb21">
+        <div class="source_table" id="cf2947946ef2192e3b9a78182cc1e17e8ccb45a7">
   <div class="header">
-    <h3>app/controllers/pages_controller.rb</h3>
+    <h3>app/controllers/funds_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>2</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>9</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -356,22 +376,184 @@
         <li class="covered" data-hits="1" data-linenumber="1">
           <span class="hits">1</span>
           
-          <code class="ruby">class PagesController &lt; ApplicationController</code>
+          <code class="ruby">class FundsController &lt; ApplicationController</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="2">
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
           <code class="ruby">  def home</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby">  end</code>
         </li>
       
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @present_value = params[:present_value].gsub(&quot;,&quot;, &quot;&quot;).to_i</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @pmt = params[:pmt].gsub(&quot;,&quot;,&quot;&quot;).to_i</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @age = params[:age].to_i</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">    </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @exp_ratio = Fund.new.get_expense(params[:fund_ticker]).to_f</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    respond_to do |format|</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      format.js</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="afddb44e6376228191d5b321e1f9d6690c478d4c">
+  <div class="header">
+    <h3>app/models/fund.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;open-uri&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Fund &lt; ActiveRecord::Base</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def get_expense(fund_name)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    page = Nokogiri::HTML(open(&quot;http://quotes.morningstar.com/fund/c-header?&amp;t=XNAS:#{fund_name}&amp;region=usa&amp;culture=en-US&amp;cur=USD&quot;))</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    exp_ratio = page.css(&quot;td span[@vkey = &#39;ExpenseRatio&#39;]&quot;).text.strip.chop</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">end</code>
