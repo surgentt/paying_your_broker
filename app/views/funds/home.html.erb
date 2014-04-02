@@ -1,27 +1,26 @@
-
 <div class="col-md-8 col-md-offset-2 user_input">
-    <%= form_tag(funds_path, method: "post", remote: true, id: "nl-form", class: "nl-form") do %>
-      I am currently <input type="text" value="" placeholder="35" name="age" id="age-input" />
-      <div class="nl-overlay"></div>
-      . I have $
-      <input type="text" value="" placeholder="10,000" name="present_value" id="pv-input"/>
-      <div class="nl-overlay"></div>
-      saved for retirement. I make monthly investments of $
-      <input type="text" value="" placeholder="1,000" name="pmt" id="cont-input" />
-      <div class="nl-overlay"></div>
-      My mutual fund's ticker symbol is 
-      <input type="text" value="" placeholder="FFFFX" name="fund_ticker" />
-      <div class="nl-submit-wrap">
-        <button class="nl-submit submit" type="submit">Buy my broker a present</button>
-      </div>
-  <!--     <div class="nl-overlay"></div> -->
-    <% end %>
-      <div id="explain-footer">
+  <%= form_tag(funds_path, method: "post", remote: true, id: "nl-form", class: "nl-form") do %>
+    I am currently <input type="text" value="" placeholder="35" name="age" id="age-input" />
+    <div class="nl-overlay"></div>
+    . I have $
+    <input type="text" value="" placeholder="10,000" name="present_value" id="pv-input"/>
+    <div class="nl-overlay"></div>
+    saved for retirement. I make monthly investments of $
+    <input type="text" value="" placeholder="1,000" name="pmt" id="cont-input" />
+    <div class="nl-overlay"></div>
+    My mutual fund's ticker symbol is 
+    <input type="text" value="" placeholder="FFFFX" name="fund_ticker" />
+    <div class="nl-submit-wrap">
+      <button class="nl-submit submit" type="submit">Buy my broker a present</button>
+    </div>
+  <% end %>
+
+  <div id="explain-footer">
     <p>We assumed that you would retire at 65 and your portfolio would grow at 8% a year, before expenses. We compared your portfolio against <%= link_to "this one", "https://personal.vanguard.com/us/funds/snapshot?FundId=0695&FundIntExt=INT" %>, which has an expense ratio of 0.17%. Please keep in mind that these numbers are for comparisions sake only and that we are not financial advisors. Happy investing!</p>
     <p>Made with love at the Flatiron School</p>
   </div>
-  <div class="ripoff col-md-6">
-  <div class="monopoly_man"></div>
-</div> 
-</div><!-- /container -->
 
+  <div class="ripoff col-md-6">
+    <div class="monopoly_man"></div>
+  </div> 
+</div>
