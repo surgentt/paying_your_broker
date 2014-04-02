@@ -1,7 +1,6 @@
 $(document).ready(function(){
-  $(".ripoff").hide();
-
   $(".user_input").on("submit", function(){
+    $('.modal-content').empty();
     $('#myModal').modal();
   });
 });

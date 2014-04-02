@@ -12,7 +12,7 @@ var port2 = new PortfolioValue(pv, pmt, age, vanguard_ratio);
 var gift = port2.fv - port1.fv
 var ripoff = "$" + (gift).formatMoney(0);
 
-// $(".model-content").empty();
+$(".model-content").empty();
 $(".modal-content").append('<h3>You paid your broker '+ ripoff);
 $(".modal-content").append('<h3>that you didn\'t have to</h3>');
 $(".modal-content").append('<h4>By the time you retire, they can buy:</h4>');
