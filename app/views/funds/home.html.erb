@@ -2,16 +2,16 @@
   <div class="row">
     <div class="col-lg-8 col-md-8 col-sm-8 col-centered user_input">
       <%= form_tag(funds_path, method: "post", remote: true, id: "nl-form", class: "nl-form clearfix") do %>
-        I am currently <input type="text" value="" placeholder="35" name="age" id="age-input" />
-        . I have $
+        I am <input type="text" value="" placeholder="35" name="age" id="age-input" />
+        years old. I have $
           <input type="text" value="" placeholder="10,000" name="present_value" id="pv-input"/>
         saved for retirement. I make monthly investments of $
           <input type="text" value="" placeholder="1,000" name="pmt" id="cont-input" />
-        and my high-fee mutual fund's ticker symbol is 
+        and my high-fee mutual fund's symbol is 
           <input type="text" value="" placeholder="FFFFX" name="fund_ticker" />
           .
         <div class="nl-submit-wrap col-md-8 col-md-offset-2 text-align-center">
-          <button class="nl-submit submit center" data-toggle="modal" data-target="#myModal" type="submit">My Broker can buy</button>
+          <button class="nl-submit submit center" data-toggle="modal" data-target="#myModal" type="submit">What Can My Broker Buy?</button>
         </div>
       <% end %>
     </div>
