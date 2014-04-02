@@ -10,7 +10,7 @@ describe "getting a amount fucked by Banker", :js => true do
       fill_in "age",           with: "23"
       fill_in "fund_ticker", with: "FFFFX"
     end
-    click_on "submit"
+    page.find(".submit").click
     expect(page).to have_content("$139,760")
     expect(page).to have_content("$50,000 Diamond Encrusted Bluetooth Headset")
   end

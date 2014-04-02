@@ -1,46 +1,46 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/thomassurgent/Desktop/flatiron/Project_Mode/screw_your_banker/app/controllers/funds_controller.rb": [
+      "/Users/danielspector/projects/flatiron_school/flatiron_projects/screw_your_banker/app/controllers/funds_controller.rb": [
         1,
         null,
         1,
         null,
         null,
         1,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
-        0,
+        1,
         null,
-        0,
-        0,
+        1,
+        1,
         null,
         null,
         null,
         null
       ],
-      "/Users/thomassurgent/Desktop/flatiron/Project_Mode/screw_your_banker/app/controllers/application_controller.rb": [
+      "/Users/danielspector/projects/flatiron_school/flatiron_projects/screw_your_banker/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/Users/thomassurgent/Desktop/flatiron/Project_Mode/screw_your_banker/app/models/fund.rb": [
+      "/Users/danielspector/projects/flatiron_school/flatiron_projects/screw_your_banker/app/models/fund.rb": [
         1,
         null,
         1,
         null,
         1,
-        0,
-        0,
+        1,
+        1,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1396453292
+    "timestamp": 1396453446
   }
 }
