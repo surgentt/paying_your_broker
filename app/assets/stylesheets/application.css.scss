@@ -38,9 +38,14 @@
   margin: 5px 0;
 }
 
-//.center {
-//  margin: 0 auto;
-//}
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+.text-align-center {
+  text-align: center;
+}
 
 .clearfix:after {
      visibility: hidden;
@@ -54,3 +59,30 @@
 /* start commented backslash hack \*/
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
+
+
+.wrapper {
+  margin-top: 80px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-top: -60px;
+  height: 70px;
+  clear: both;
+  padding-top: 20px;
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+.footer-left{
+  float: left;
+  margin-left: 25px;
+
+}
+
+.footer-right{
+  float: right;
+  margin-right: 25px;
+}

@@ -7,6 +7,7 @@
   <%= csrf_meta_tags %>
   <%= analytics_init if Rails.env.production? %>
 </head>
+<%= render 'layouts/header' %>
 <body class="<%= controller_name %>">
   <div class="container-fluid">
     <div class="row">
@@ -15,5 +16,4 @@
   </div>
 </body>
 <%= render 'layouts/footer' %>
-<%= debug(params) if Rails.env.development? %>
 </html>
