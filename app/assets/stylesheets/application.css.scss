@@ -20,6 +20,7 @@
 @import "bootstrap";
 @import "funds";
 @import "awesome_form";
+@import "modal"
 
 /* Some Style from the Bootstrap Default Theme */
 body {
@@ -36,3 +37,20 @@ body {
 .theme-showcase > p > .btn {
   margin: 5px 0;
 }
+
+//.center {
+//  margin: 0 auto;
+//}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }

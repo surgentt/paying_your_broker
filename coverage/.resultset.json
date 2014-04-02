@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/danielspector/projects/flatiron_school/flatiron_projects/screw_your_banker/app/controllers/funds_controller.rb": [
+      "/Users/thomassurgent/Desktop/flatiron/Project_Mode/screw_your_banker/app/controllers/funds_controller.rb": [
         1,
         null,
         1,
@@ -21,14 +21,14 @@
         null,
         null
       ],
-      "/Users/danielspector/projects/flatiron_school/flatiron_projects/screw_your_banker/app/controllers/application_controller.rb": [
+      "/Users/thomassurgent/Desktop/flatiron/Project_Mode/screw_your_banker/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/Users/danielspector/projects/flatiron_school/flatiron_projects/screw_your_banker/app/models/fund.rb": [
+      "/Users/thomassurgent/Desktop/flatiron/Project_Mode/screw_your_banker/app/models/fund.rb": [
         1,
         null,
         1,
@@ -41,6 +41,6 @@
         null
       ]
     },
-    "timestamp": 1396453446
+    "timestamp": 1396458692
   }
 }
