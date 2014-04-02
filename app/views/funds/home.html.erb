@@ -1,5 +1,5 @@
 
-<div class="col-md-8 col-md-offset-2">
+<div class="col-md-8 col-md-offset-2 user_input">
     <%= form_tag(funds_path, method: "post", remote: true, id: "nl-form", class: "nl-form") do %>
       I am currently <input type="text" value="" placeholder="35" name="age"/>
       <div class="nl-overlay"></div>
@@ -11,8 +11,8 @@
       <div class="nl-overlay"></div>
       My mutual fund's ticker symbol is 
       <input type="text" value="" placeholder="FFFFX" name="fund_ticker" />
-      <div class="nl-submit-wrap">
-        <button class="nl-submit" type="submit">Buy my broker a present</button>
+      <div class="nl-submit-wrap submit">
+        <button class="nl-submit submit" type="submit">Buy my broker a present</button>
       </div>
   <!--     <div class="nl-overlay"></div> -->
     <% end %>
