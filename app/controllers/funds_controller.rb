@@ -8,11 +8,7 @@ class FundsController < ApplicationController
     @pmt = params[:pmt].gsub(",","").to_i
     @age = params[:age].to_i
     
-    if params[:fund_ticker].empty?
-      @exp_ratio = params[:expense_ratio].to_f
-    else
-      @exp_ratio = Fund.new.get_expense(params[:fund_ticker]).to_f
-    end
+    @exp_ratio = Fund.new.get_expense(params[:fund_ticker]).to_f
 
     respond_to do |format|
       format.js
