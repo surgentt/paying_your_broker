@@ -12,33 +12,33 @@ var port2 = new PortfolioValue(pv, pmt, age, vanguard_ratio);
 var gift = port2.fv - port1.fv
 var ripoff = "$" + (gift).formatMoney(0);
 
-$(".model-content").empty();
-$(".modal-content").append('<h3>You paid your broker '+ ripoff);
-$(".modal-content").append('<h3>that you didn\'t have to</h3>');
-$(".modal-content").append('<h4>By the time you retire, they can buy:</h4>');
+$(".modal-header").empty();
+$(".modal-body").empty();
+$(".modal-header").append('<h3>You paid your broker '+ ripoff + ' extra');
+$(".modal-header").append('<h4>By the time you retire, they can buy:</h4>');
 
 if (gift >= 1350000) {
-  $(".modal-content").append('<div>A Giant Robot Warrior for $1,350,000</div>');
-  $(".modal-content").append('<div class="robot"></div>'); 
+  $(".modal-body").append('<h4>A Giant Robot Warrior for $1,350,000</h4>');
+  $(".modal-body").append('<div class="robot"></div>'); 
 } else if (gift >= 190000) {
-  $(".modal-content").append('<div>An Actual Hovercraft for $190,000</div>');
-  $(".modal-content").append('<div class="hovercraft"></div>');  
+  $(".modal-body").append('<h4>An Actual Hovercraft for $190,000</h4>');
+  $(".modal-body").append('<div class="hovercraft"></div>');  
 } else if (gift >= 50000) {
-  $(".modal-content").append('<div>A Diamond Encrusted Bluetooth Headset for $50,000</div>');
-  $(".modal-content").append('<div class="headset"></div>');   
+  $(".modal-body").append('<h4>A Diamond Encrusted Bluetooth Headset for $50,000</h4>');
+  $(".modal-body").append('<div class="headset"></div>');   
 } else if (gift >= 35000) {
-  $(".modal-content").append('<div>A Personalized Whac-A-Mole Game for $35,000</div>');
-  $(".modal-content").append('<div class="whac_a_mole"></div>');  
+  $(".modal-body").append('<h4>A Personalized Whac-A-Mole Game for $35,000</h4>');
+  $(".modal-body").append('<div class="whac_a_mole"></div>');  
 } else if (gift >= 18993) {
-  $(".modal-content").append('<divA Crystal Ergoripado Vaccum for >$18,993</div>');
-  $(".modal-content").append('<div class="vacuum"></div>');    
+  $(".modal-body").append('<h4>A Crystal Ergoripado Vaccum for >$18,993</h4>');
+  $(".modal-body").append('<div class="vacuum"></div>');    
 } else if (gift >= 6400) {
-  $(".modal-content").append('<div>The Kohler Numi Toilet System for $6400</div>');
-  $(".modal-content").append('<div class="toliet"></div>');
+  $(".modal-body").append('<h4>The Kohler Numi Toilet System for $6400</h4>');
+  $(".modal-body").append('<div class="toliet"></div>');
 } else if (gift >= 1650) {
-  $(".modal-content").append('<div>A Gold Backpack for $1650</div>');
-  $(".modal-content").append('<div class="gold_backpack"></div>');
+  $(".modal-body").append('<h4>A Gold Backpack for $1650</h4>');
+  $(".modal-body").append('<div class="gold_backpack"></div>');
 } else if (gift >= 20 ) {
-  $(".modal-content").append('<div>Renova Colored Toliet Paper for $20</div>');
-  $(".modal-content").append('<div class="toliet_paper"></div>');
+  $(".modal-body").append('<h4>Renova Colored Toliet Paper for $20</h4>');
+  $(".modal-body").append('<div class="toliet_paper"></div>');
 }
