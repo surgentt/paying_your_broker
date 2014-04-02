@@ -1,74 +1,34 @@
 <h1>Buy Your Banker a Present</h1>
 
-<div class="col-md-4">
-  <%= form_tag(funds_path, method: "post", remote: true) do %>
-    <div class="form-group">
-      <%= label_tag :present_value, "Current Retirement Savings" %>
-      <%= text_field_tag :present_value, nil, class: "form-control" %><br>
-    </div>
-
-    <div class="form-group">
-      <%= label_tag :pmt, "Monthly Contributions" %>
-      <%= text_field_tag  :pmt, nil, class: "form-control" %><br>
-    </div>
-
-    <div class="form-group">
-      <%= label_tag :age, "How Old Are You?" %>
-      <%= text_field_tag :age, nil, class: "form-control", id: "age" %><br>
-    </div>
-
-    <div class="form-group">
-      <%= label_tag :fund_ticker, "Fund Ticker" %>
-      <%= text_field_tag :fund_ticker, nil, class: "form-control" %><br>
-    </div>
-
-    <%= submit_tag "What are you buying your broker?", id: "submit", class: "btn btn-primary btn-lg btn-block" %>
-  <% end %>
-
-  <div id="explain-footer">
+<div class="col-md-6 col-md-offset-3">
+    <%= form_tag(funds_path, method: "post", remote: true, id: "nl-form", class: "nl-form") do %>
+      I am currently <input type="text" value="" placeholder="35" name="age"/>
+      <div class="nl-overlay"></div>
+      . I have
+      <input type="text" value="" placeholder="$10,000" name="present_value"/>
+      <div class="nl-overlay"></div>
+      currently saved for retirement. I make monthly investments of
+      <input type="text" value="" placeholder="$1,000" name="pmt"/>
+      <div class="nl-overlay"></div>
+      My mutual fund's ticker symbol is 
+      <input type="text" value="" placeholder="FFFFX" name="fund_ticker" />
+      <div class="nl-submit-wrap">
+        <button class="nl-submit" type="submit">Buy my broker a present</button>
+      </div>
+  <!--     <div class="nl-overlay"></div> -->
+    <% end %>
+      <div id="explain-footer">
     <p>We assumed that you would retire at 65 and your portfolio would grow at 8% a year, before expenses. We compared your portfolio against <%= link_to "this one", "https://personal.vanguard.com/us/funds/snapshot?FundId=0695&FundIntExt=INT" %>, which has an expense ratio of 0.17%. Please keep in mind that these numbers are for comparisions sake only and that we are not financial advisors. Happy investing!</p>
     <p>Made with love at the Flatiron School</p>
   </div>
-</div>
+
+</div><!-- /container -->
+
+
 
 <div class="ripoff col-md-6">
   <div class="monopoly_man"></div>
-<!-- <div class="toliet_paper"></div>
-  <div class="gold_backpack"></div>
-  <div class="toliet"></div>
-  <div class="vacuum"></div>
-  <div class="whac_a_mole"></div>
-  <div class="headset"></div>
-  <div class="hovercraft"></div>
-  <div class="robot"></div>
-   <div class="robot"></div> -->
 </div> 
 
-<div class="main clearfix col-md-10">
-        <form id="nl-form" class="nl-form">
-          I am currently 
-        <input type="text" value="" placeholder="35" data-subline="For example: <em>23</em> or <em>55</em>"/>
-          <div class="nl-overlay"></div>
-          . I have
-          <input type="text" value="" placeholder="$10,000" data-subline="For example: <em>$5,000</em> or <em>$100,000</em>"/>
-          <div class="nl-submit-wrap">
-          </div>
-          <div class="nl-overlay"></div>
-          currently saved for retirement. I make monthly investments of
-          <input type="text" value="" placeholder="$1,000"/>
-          <div class="nl-submit-wrap">
-          </div>
-          <div class="nl-overlay"></div>
-          My mutual fund's ticker symbol is <input type="text" value="" placeholder="FFFFX" data-subline="Enter Your Mutual Fund's Ticker"/>
-          <div class="nl-submit-wrap">
-            <button class="nl-submit" type="submit">Buy my broker a present</button>
-          </div>
-          <div class="nl-overlay"></div>
-        </form>
-      </div>
-    </div><!-- /container -->
-    <script src="assets/form.js"></script>
-    <script>
-      var nlform = new NLForm( document.getElementById( 'nl-form' ) );
-    </script>
+   
 
