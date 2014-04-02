@@ -49,4 +49,31 @@
    <div class="robot"></div> -->
 </div> 
 
+<div class="main clearfix col-md-10">
+        <form id="nl-form" class="nl-form">
+          I am currently 
+        <input type="text" value="" placeholder="35" data-subline="For example: <em>23</em> or <em>55</em>"/>
+          <div class="nl-overlay"></div>
+          . I have
+          <input type="text" value="" placeholder="$10,000" data-subline="For example: <em>$5,000</em> or <em>$100,000</em>"/>
+          <div class="nl-submit-wrap">
+          </div>
+          <div class="nl-overlay"></div>
+          currently saved for retirement. I make monthly investments of
+          <input type="text" value="" placeholder="$1,000"/>
+          <div class="nl-submit-wrap">
+          </div>
+          <div class="nl-overlay"></div>
+          My mutual fund's ticker symbol is <input type="text" value="" placeholder="FFFFX" data-subline="Enter Your Mutual Fund's Ticker"/>
+          <div class="nl-submit-wrap">
+            <button class="nl-submit" type="submit">Buy my broker a present</button>
+          </div>
+          <div class="nl-overlay"></div>
+        </form>
+      </div>
+    </div><!-- /container -->
+    <script src="assets/form.js"></script>
+    <script>
+      var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+    </script>
 
