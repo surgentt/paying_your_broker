@@ -1,7 +1,6 @@
 class FundsController < ApplicationController
 
   def create
-    binding.pry
     @present_value = params[:present_value].gsub(",", "").to_i
     @pmt = params[:pmt].gsub(",","").to_i
     @age = params[:age].to_i
