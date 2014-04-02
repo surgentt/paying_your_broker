@@ -174,32 +174,32 @@
 }
 
 /* custom placeholder color */
-input::-webkit-input-placeholder {
-  color: rgba(255,255,255,0.8);
-}
+// input::-webkit-input-placeholder {
+//   color: rgba(255,255,255,0.8);
+// }
 
-input:active::-webkit-input-placeholder ,
-input:focus::-webkit-input-placeholder {
-  color: rgba(255,255,255,0.2);
-}
+// input:active::-webkit-input-placeholder ,
+// input:focus::-webkit-input-placeholder {
+//   color: rgba(255,255,255,0.2);
+// }
 
-input::-moz-placeholder {
-  color: rgba(255,255,255,0.8);
-}
+// input::-moz-placeholder {
+//   color: rgba(255,255,255,0.8);
+// }
 
-input:active::-moz-placeholder,
-input:focus::-moz-placeholder {
-  color: rgba(255,255,255,0.2);
-}
+// input:active::-moz-placeholder,
+// input:focus::-moz-placeholder {
+//   color: rgba(255,255,255,0.2);
+// }
 
-input:-ms-input-placeholder {  
-  color: rgba(255,255,255,0.8);
-}
+// input:-ms-input-placeholder {  
+//   color: rgba(255,255,255,0.8);
+// }
 
-input:active::-ms-input-placeholder ,
-input:focus::-ms-input-placeholder {
-  color: rgba(255,255,255,0.2);
-}
+// input:active::-ms-input-placeholder ,
+// input:focus::-ms-input-placeholder {
+//   color: rgba(255,255,255,0.2);
+// }
 
 /* example field below text input */
 .nl-ti-text ul li.nl-ti-example {
@@ -285,4 +285,16 @@ input:focus::-ms-input-placeholder {
   .nl-form {
     font-size: 2em;
   }
+}
+
+#age-input {
+  width: 1.3em;
+}
+
+#pv-input {
+  width: 3.6em;
+}
+
+#cont-input {
+  width: 3em;
 }
