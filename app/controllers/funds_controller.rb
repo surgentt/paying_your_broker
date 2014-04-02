@@ -1,8 +1,5 @@
 class FundsController < ApplicationController
 
-  def home
-  end
-
   def create
     @present_value = params[:present_value].gsub(",", "").to_i
     @pmt = params[:pmt].gsub(",","").to_i
