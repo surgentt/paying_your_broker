@@ -25,11 +25,6 @@ Simply input your details on [howmuchareyoupayingyourbroker.com](howmuchareyoupa
 
 We love pull requests! All we ask is that you submit RSpec tests along with any request.
 
-## Future
-
-What features are you currently working on? Only mention things that you
-actually are implementing. No pie-in-the-sky-never-gonna-happen stuff.
-
 ## Author
 
 Made with love at the [Flatiron School](www.flatironschool.com) by [Thomas Surgent](www.twitter.com/surgentt) and [Daniel Spector](www.twittr.com/danielspecs) 
