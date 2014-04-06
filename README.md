@@ -6,7 +6,7 @@ You're losing a ton of money by being in a high-fee mutual fund. This app lifts 
 
 ## Screenshots
 
-![screenshot](http://imgur.com/Hmv6dUc)
+![Imgur](http://i.imgur.com/Hmv6dUc.png?1)
 
 ## Background
 
