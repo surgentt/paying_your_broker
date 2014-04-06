@@ -1,30 +1,29 @@
-# Screw Your Banker
+# How Much Are You Paying Your Broker?
 
 ## Description
 
-Add a short description of your app.
+You're losing a ton of money by being in a high-fee mutual fund. This app lifts the cover off the real cost of high-fee mutual funds and suggests alternatives that can literally save you millions in the long run.
 
 ## Screenshots
 
-Add some spiffy screenshots of your app here.
+![screenshot](http://imgur.com/Hmv6dUc)
 
 ## Background
 
-Why did you want to make this app? What was your development process
-like?
+We wanted to make a site that exposed how much people were jeapordizing their retirement by using a high-fee mutual fund. By implementing a clever UX and using some humor, we were able to convey how important it is to use a low-fee mutual fund.
 
 ## Features
 
-Bullet point some of the key features of your app here.
+* Automatic expense ratio scraping from morningstar.com
+* Dynamic AJAX modal injection
 
 ## Usage
 
-How do users use your app?
+Simply input your details on [howmuchareyoupayingyourbroker.com](howmuchareyoupayingyourbroker.com) to get an idea of how much money you can save by switching to a low-fee mutual fund.
 
 ## Development/Contribution
 
-Explain how people can contribute to your app. How should they write tests?
-Any things in particular you'd like to see in pull requests?
+We love pull requests! All we ask is that you submit RSpec tests along with any request.
 
 ## Future
 
@@ -33,8 +32,8 @@ actually are implementing. No pie-in-the-sky-never-gonna-happen stuff.
 
 ## Author
 
-Link to your blog, twitter, etc!
+Made with love at the [Flatiron School](www.flatironschool.com) by [Thomas Surgent](www.twitter.com/surgentt) and [Daniel Spector](www.twittr.com/danielspecs) 
 
 ## License
 
-My Spiffy App is MIT Licensed. See LICENSE for details.
+How Much Are You Paying Your Broker is MIT Licensed. See LICENSE for details.
