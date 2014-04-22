@@ -19,7 +19,7 @@ We wanted to make a site that exposed how much people were jeapordizing their re
 
 ## Usage
 
-Simply input your details on [howmuchareyoupayingyourbroker.com](howmuchareyoupayingyourbroker.com) to get an idea of how much money you can save by switching to a low-fee mutual fund.
+Simply input your details on [howmuchareyoupayingyourbroker.com](https://howmuchareyoupayingyourbroker.com) to get an idea of how much money you can save by switching to a low-fee mutual fund.
 
 ## Development/Contribution
 
@@ -27,7 +27,7 @@ We love pull requests! All we ask is that you submit RSpec tests along with any 
 
 ## Author
 
-Made with love at the [Flatiron School](www.flatironschool.com) by [Thomas Surgent](www.twitter.com/surgentt) and [Daniel Spector](www.twittr.com/danielspecs) 
+Made with love at the [Flatiron School](https://flatironschool.com) by [Thomas Surgent](https://twitter.com/surgentt) and [Daniel Spector](https://twitter.com/danielspecs) 
 
 ## License
 
