@@ -19,7 +19,7 @@ We wanted to make a site that exposed how much people were jeapordizing their re
 
 ## Usage
 
-Simply input your details on [howmuchareyoupayingyourbroker.com](https://howmuchareyoupayingyourbroker.com) to get an idea of how much money you can save by switching to a low-fee mutual fund.
+Simply input your details on [howmuchareyoupayingyourbroker.com](http://howmuchareyoupayingyourbroker.com) to get an idea of how much money you can save by switching to a low-fee mutual fund.
 
 ## Development/Contribution
 
